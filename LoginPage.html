@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and signup</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: #7fbfff;
+            font-family: sans-serif;
+            display: flex;
+            margin: 0px;
+            height: 100vh;
+           justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background-color:white;
+            padding: 30px;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0px 15px 30px  rgb(0,0,0,0.2);
+        }
+        h2 {
+            text-align: center;
+          margin-bottom: 15px;
+
+        }
+        label{
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        input{
+            width: 100%;
+            margin-top: 5px;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        input:focus{
+            border: none;
+            color: #6c6c6c; 
+        }
+        button{
+            background-color: rgb(205, 43, 226);
+            color: #ccc;
+            font-size: 16px;
+            margin-top: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #554fd4;
+        }
+        .divider{
+            text-align: center;
+            color: gray;
+            margin: 20px 0;
+        }
+    </style>
+    <!----login page-->
+    <form>
+        <h2>login</h2>
+        <div class="container">
+
+            <label for="login-email">Email</label>
+            <input id="login-email" type="email" required>
+
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" required>
+            <button type="submit">login</button>
+    </form>
+    <div class="divider">OR</div>
+
+    <!----singup page----->
+    <form>
+        <h2>singn up</h2>
+        <label for="signup-username">username</label>
+        <input id="signup-username" type="username" required>
+
+        <label for="signup-email">email</label>
+        <input id="signup-email" type="email" required>
+
+        <label for="sign=password">password</label>
+        <input id="signup-password" type="password" required>
+        <button type="submit">signup</button>
+    </form>
+
+
+</div>
+
+</body>
+</html>
