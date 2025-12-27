@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 40px;
+        }
+
+        /* Page Title */
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 32px;
+            color: #333;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Product Card */
+        .product-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Product Image */
+        .product-image {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Product Info */
+        .product-info {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .product-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        .buy-btn {
+            margin-top: auto;
+            padding: 10px;
+            border: none;
+            background-color: #000;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-btn:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="title">Our Products</h1>
+
+    <div class="product-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="headphones.jpg" alt="Product 1">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Wireless Headphones</div>
+                <div class="product-price">$99.99</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="smart watch.jpg" alt="Product 2">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Smart Watch</div>
+                <div class="product-price">$149.99</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="speaker.jpg" alt="Product 3">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Bluetooth Speaker</div>
+                <div class="product-price">$79.99</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="game mouse.jpg" alt="Product 4">
+            </div>
+            <div class="product-info">
+                <div class="product-name">Gaming Mouse</div>
+                <div class="product-price">$49.99</div>
+                <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
